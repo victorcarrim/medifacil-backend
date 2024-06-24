@@ -11,7 +11,7 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [] Desevolvimento da integração com IA para auxilio ao profissional de saúde sobre o histórico médico de um paciente.
 - [] Desenvolvimento da funcionalidade de familiares poderem acompanhar o tratamento de um paciente.
 
-### Repositorios Complementares
+## 🗃 Repositorios Complementares
 
 [MediFácil Frontend](https://github.com/victorcarrim/medifacil-frontend) - Repositório com o frontend da aplicação MediFácil
 
