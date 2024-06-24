@@ -1,7 +1,7 @@
 # MediFácil Backend
 
 
-> Linha adicional de texto informativo sobre o que o projeto faz. Sua introdução deve ter cerca de 2 ou 3 linhas. Não exagere, as pessoas não vão ler.
+> O MediFácil é um sistema idealizado para facilitar a comunicação e gestão de medicamentos entre médicos e pacientes, oferecendo uma interface visual e acessível.
 
 ### Ajustes e melhorias
 
@@ -10,6 +10,16 @@ O projeto ainda está em desenvolvimento e as próximas atualizações serão vo
 - [] Desenvolvimento da funcionalidade de prontuarios de um paciente.
 - [] Desevolvimento da integração com IA para auxilio ao profissional de saúde sobre o histórico médico de um paciente.
 - [] Desenvolvimento da funcionalidade de familiares poderem acompanhar o tratamento de um paciente.
+
+### Repositorios Complementares
+
+[MediFácil Frontend](https://github.com/victorcarrim/medifacil-frontend) - Repositório com o frontend da aplicação MediFácil
+
+[MediFácil Mobile](https://github.com/victorcarrim/medifacil-mobile) - Repositório com o mobile da aplicação MediFácil
+
+Frontend disponível para acesso em: https://medifacil-frontend-two.vercel.app/
+
+Backend disponível para consumo em: https://medifacil-backend.vercel.app/
 
 ## 💻 Pré-requisitos
 
@@ -58,6 +68,17 @@ Usuário profissional de saude:
     - Login: 11111111111
     - Senha: 12345
 ```
+
+Caso opte por usar nossa aplicação na nuvem possuimos um usuário paciente ja cadastrado (ou de cima tambem estão presentes).
+
+```angular2html
+- Login: 22222222222
+- Senha: 12345
+```
+
+Acesso a aplicação web online: https://medifacil-frontend-two.vercel.app/
+
+Acesso ao backend online: https://medifacil-backend.vercel.app/
 
 ## 💻 Funcionalidades presentes no sistema
 
@@ -159,6 +180,14 @@ Agradecemos às seguintes pessoas que contribuíram para este projeto:
         <img src="https://avatars.githubusercontent.com/u/106118943?v=4" width="100px;" alt="Foto da Gabriela Marques dos Santos"/><br>
         <sub>
           <b>Gabriela Marques dos Santos</b>
+        </sub>
+      </a>
+    </td>
+      <td align="center">
+      <a href="#" title="">
+        <img src="https://media-gru2-2.cdn.whatsapp.net/v/t61.24694-24/439076101_462422389479867_2862236630768755022_n.jpg?ccb=11-4&oh=01_Q5AaIFPWiIylvkt3PUfUs-xRG-SHcuPKj0NX8SR_EXP10BjE&oe=6685A66D&_nc_sid=e6ed6c&_nc_cat=100" width="100px;" alt="Foto da Larissa Gregorio Kaluck"/><br>
+        <sub>
+          <b>Larissa Gregório Klauck</b>
         </sub>
       </a>
     </td>
