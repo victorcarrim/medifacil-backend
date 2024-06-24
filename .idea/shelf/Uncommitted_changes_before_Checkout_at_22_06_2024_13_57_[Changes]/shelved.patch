@@ -1,0 +1,20 @@
+Index: server.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>require(\"dotenv\").config();\nconst mongoose = require(\"mongoose\");\nconst app = require(\"./index\");\n\nmongoose\n    .connect(process.env.MONGODB_URI, {\n      serverSelectionTimeoutMS: 15000\n    })\n    .then(() => {\n      console.log(\"Connected to MongoDB\");\n    })\n    .catch((err) => {\n      console.log(\"Error: \", err);\n    });\nmodule.exports = app;\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server.js b/server.js
+--- a/server.js	(revision 7503a7cf92e51eb73549864eb69c0465f2dfb049)
++++ b/server.js	(date 1719019494372)
+@@ -8,6 +8,9 @@
+     })
+     .then(() => {
+       console.log("Connected to MongoDB");
++        app.listen(process.env.PORT, () => {
++            console.log("Server is running on port 5000");
++        });
+     })
+     .catch((err) => {
+       console.log("Error: ", err);

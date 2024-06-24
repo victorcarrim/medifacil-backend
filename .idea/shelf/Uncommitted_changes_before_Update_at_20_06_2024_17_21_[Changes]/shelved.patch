@@ -1,0 +1,18 @@
+Index: server.js
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>require(\"dotenv\").config();\nconst mongoose = require(\"mongoose\");\nconst app = require(\"./index\");\n\nmongoose\n  .connect(\n    process.env.MONGODB_URI,\n    { useNewUrlParser: true, useUnifiedTopology: true }\n  )\n  .then(() => {\n    console.log(\"Connected to MongoDB\");\n    app.listen(process.env.PORT, () => {\n      console.log(\"Server is running on port 5000\");\n    });\n  })\n  .catch((err) => {\n    console.log(\"Error: \", err);\n  });\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/server.js b/server.js
+--- a/server.js	(revision 852532fdbc5597414a229e59c60928b6eca084e0)
++++ b/server.js	(date 1718914888101)
+@@ -5,7 +5,6 @@
+ mongoose
+   .connect(
+     process.env.MONGODB_URI,
+-    { useNewUrlParser: true, useUnifiedTopology: true }
+   )
+   .then(() => {
+     console.log("Connected to MongoDB");

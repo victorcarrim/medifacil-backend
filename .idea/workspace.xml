@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="10c78d6c-5fc6-4328-aa3e-d21c653b6822" name="Changes" comment="FIX: Deploy">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/auth.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2hvFf1ruJFi7BsAEIA4d6p9qtbL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;Node.js.index.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;27-feat-gerador-de-pdf-da-receita&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/victor/Documentos/medifacil/medifacil-mobile&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/victor/.local/share/JetBrains/Toolbox/apps/webstorm/plugins/javascript-impl/jsLanguageServicesImpl/external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/postman" />
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="10c78d6c-5fc6-4328-aa3e-d21c653b6822" name="Changes" comment="" />
+      <created>1718466743680</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1718466743680</updated>
+      <workItem from="1718466744766" duration="529000" />
+      <workItem from="1718467282180" duration="52433000" />
+      <workItem from="1718638538835" duration="3671000" />
+      <workItem from="1718835252731" duration="625000" />
+      <workItem from="1718842889718" duration="1996000" />
+      <workItem from="1718849347102" duration="1078000" />
+      <workItem from="1718883408736" duration="9000" />
+      <workItem from="1718884407151" duration="22000" />
+      <workItem from="1718907925225" duration="827000" />
+      <workItem from="1718912781799" duration="3470000" />
+      <workItem from="1718917665321" duration="1395000" />
+      <workItem from="1718966449732" duration="19000" />
+      <workItem from="1719019418943" duration="3598000" />
+      <workItem from="1719023560906" duration="2678000" />
+      <workItem from="1719075382711" duration="4089000" />
+      <workItem from="1719084028277" duration="372000" />
+      <workItem from="1719087991882" duration="4203000" />
+      <workItem from="1719102862375" duration="52000" />
+      <workItem from="1719151076077" duration="10929000" />
+      <workItem from="1719176287232" duration="7237000" />
+      <workItem from="1719188765324" duration="2626000" />
+    </task>
+    <task id="LOCAL-00001" summary="FEAT: Criar usuário e autenticar">
+      <option name="closed" value="true" />
+      <created>1718482812362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1718482812362</updated>
+    </task>
+    <task id="LOCAL-00002" summary="FEAT: Get dos medicamentos">
+      <option name="closed" value="true" />
+      <created>1718559728105</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1718559728105</updated>
+    </task>
+    <task id="LOCAL-00003" summary="FEAT: Criar e atualizar receita">
+      <option name="closed" value="true" />
+      <created>1718640160670</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1718640160670</updated>
+    </task>
+    <task id="LOCAL-00004" summary="FEAT: Postman do projeto">
+      <option name="closed" value="true" />
+      <created>1718640307783</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1718640307783</updated>
+    </task>
+    <task id="LOCAL-00005" summary="FIX: Liberar cors">
+      <option name="closed" value="true" />
+      <created>1718908114096</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1718908114096</updated>
+    </task>
+    <task id="LOCAL-00006" summary="FEAT: Vercel file">
+      <option name="closed" value="true" />
+      <created>1718914384279</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1718914384279</updated>
+    </task>
+    <task id="LOCAL-00007" summary="FEAT: Vercel file">
+      <option name="closed" value="true" />
+      <created>1718914422302</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1718914422302</updated>
+    </task>
+    <task id="LOCAL-00008" summary="FEAT: Vercel">
+      <option name="closed" value="true" />
+      <created>1718914991710</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1718914991710</updated>
+    </task>
+    <task id="LOCAL-00009" summary="FIX: Vercel">
+      <option name="closed" value="true" />
+      <created>1718915260457</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1718915260457</updated>
+    </task>
+    <task id="LOCAL-00010" summary="FIX: server">
+      <option name="closed" value="true" />
+      <created>1718915649783</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1718915649783</updated>
+    </task>
+    <task id="LOCAL-00011" summary="FIX: server">
+      <option name="closed" value="true" />
+      <created>1718915897235</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1718915897235</updated>
+    </task>
+    <task id="LOCAL-00012" summary="FIX: Name User">
+      <option name="closed" value="true" />
+      <created>1718917783996</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1718917783996</updated>
+    </task>
+    <task id="LOCAL-00013" summary="FIX: Name User">
+      <option name="closed" value="true" />
+      <created>1718918123505</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1718918123505</updated>
+    </task>
+    <task id="LOCAL-00014" summary="FIX: Name User">
+      <option name="closed" value="true" />
+      <created>1718918263402</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1718918263402</updated>
+    </task>
+    <task id="LOCAL-00015" summary="FIX: Doses">
+      <option name="closed" value="true" />
+      <created>1719025155946</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1719025155946</updated>
+    </task>
+    <task id="LOCAL-00016" summary="FIX: Consoles">
+      <option name="closed" value="true" />
+      <created>1719025858993</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1719025858993</updated>
+    </task>
+    <task id="LOCAL-00017" summary="FIX: Consoles">
+      <option name="closed" value="true" />
+      <created>1719026238250</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1719026238250</updated>
+    </task>
+    <task id="LOCAL-00018" summary="FIX: Retirado a porta">
+      <option name="closed" value="true" />
+      <created>1719076055416</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1719076055416</updated>
+    </task>
+    <task id="LOCAL-00019" summary="FIX: Configurações para o servidor">
+      <option name="closed" value="true" />
+      <created>1719077651382</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1719077651382</updated>
+    </task>
+    <task id="LOCAL-00020" summary="FIX: Update Image">
+      <option name="closed" value="true" />
+      <created>1719101606459</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1719101606459</updated>
+    </task>
+    <task id="LOCAL-00021" summary="FIX: Update Image">
+      <option name="closed" value="true" />
+      <created>1719151572770</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1719151572770</updated>
+    </task>
+    <task id="LOCAL-00022" summary="FIX: Update Image">
+      <option name="closed" value="true" />
+      <created>1719154144840</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1719154144840</updated>
+    </task>
+    <task id="LOCAL-00023" summary="FIX: PDF">
+      <option name="closed" value="true" />
+      <created>1719176957216</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1719176957216</updated>
+    </task>
+    <task id="LOCAL-00024" summary="FIX: PDF">
+      <option name="closed" value="true" />
+      <created>1719177055760</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1719177055760</updated>
+    </task>
+    <task id="LOCAL-00025" summary="FIX: PDF">
+      <option name="closed" value="true" />
+      <created>1719177969756</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1719177969756</updated>
+    </task>
+    <task id="LOCAL-00026" summary="FIX: Deploy">
+      <option name="closed" value="true" />
+      <created>1719184884133</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1719184884133</updated>
+    </task>
+    <task id="LOCAL-00027" summary="FIX: Deploy">
+      <option name="closed" value="true" />
+      <created>1719186963368</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1719186963368</updated>
+    </task>
+    <task id="LOCAL-00028" summary="FIX: Deploy">
+      <option name="closed" value="true" />
+      <created>1719187350064</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1719187350064</updated>
+    </task>
+    <task id="LOCAL-00029" summary="FIX: Deploy">
+      <option name="closed" value="true" />
+      <created>1719189247511</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1719189247511</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="FEAT: Criar usuário e autenticar" />
+    <MESSAGE value="FEAT: Get dos medicamentos" />
+    <MESSAGE value="FEAT: Criar e atualizar receita" />
+    <MESSAGE value="FEAT: Postman do projeto" />
+    <MESSAGE value="FIX: Liberar cors" />
+    <MESSAGE value="FEAT: Vercel file" />
+    <MESSAGE value="FEAT: Vercel" />
+    <MESSAGE value="FIX: Vercel" />
+    <MESSAGE value="FIX: server" />
+    <MESSAGE value="FIX: Name User" />
+    <MESSAGE value="FIX: Doses" />
+    <MESSAGE value="FIX: Consoles" />
+    <MESSAGE value="FIX: Retirado a porta" />
+    <MESSAGE value="FIX: Configurações para o servidor" />
+    <MESSAGE value="FIX: Update Image" />
+    <MESSAGE value="FIX: PDF" />
+    <MESSAGE value="FIX: Deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="FIX: Deploy" />
+  </component>
+</project>

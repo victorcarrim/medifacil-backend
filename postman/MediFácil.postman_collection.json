@@ -1,0 +1,357 @@
+{
+	"info": {
+		"_postman_id": "1d42fb14-788b-4b8d-82c7-98dbf1aa96ce",
+		"name": "MediFácil",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33845273"
+	},
+	"item": [
+		{
+			"name": "Criar Usuários",
+			"item": [
+				{
+					"name": "Pré Cadastro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\" : \"55555555555\",\n    \"birthDate\": \"2012-07-27\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/auth/pre-register"
+					},
+					"response": []
+				},
+				{
+					"name": "Finalizado o cadastro",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"email@client.com\",\n    \"password\": \"12345\",\n    \"cpf\": \"55555555555\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/auth/register"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Login Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Armazenar o token JWT\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"jwt_token\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "33a4092b741c47cd904c677d3d33e8db",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"token\": \"33a4092b741c47cd904c677d3d33e8db\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/auth/login-token"
+					},
+					"response": []
+				},
+				{
+					"name": "Login CPF",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Armazenar o token JWT\", function () {",
+									"    var jsonData = pm.response.json();",
+									"    pm.environment.set(\"jwt_token\", jsonData.token);",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "33a4092b741c47cd904c677d3d33e8db",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"55555555555\",\n    \"password\": \"12345\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/auth/login-cpf"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Usuários",
+			"item": [
+				{
+					"name": "Get Admins",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/user/admin"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Usuários",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/user/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/user/666f0a3f003fe13a87ea29fb"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Medicamentos",
+			"item": [
+				{
+					"name": "Get Medicamentos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api}}/api/medicine/get-medicines-by-name?nome_produto=paracetamol",
+							"host": [
+								"{{api}}"
+							],
+							"path": [
+								"api",
+								"medicine",
+								"get-medicines-by-name"
+							],
+							"query": [
+								{
+									"key": "nome_produto",
+									"value": "paracetamol"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get by ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/medicine/666f1975d1634d8060238b22"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Medicamentos",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/medicine/list-all"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Receitas",
+			"item": [
+				{
+					"name": "Nova Receita",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"name\": \"Minha Receita\",\n        \"data_expiration\":\"2025-12-31\",\n        \"pacient\": \"666f0a9a003fe13a87ea2a14\",\n        \"medicines\": [\n            {\n                \"medicine\": \"666f1975d1634d8060239bfc\",\n                \"usage_duration\": 2,\n                \"usage_interval\": \"8 hours\",\n                \"treatment_start\": \"2024-11-31\",\n                \"next_dose\": \"2024-12-01\",\n                \"link_photo\": \"http://linkparafoto.com/medicine1.jpg\",\n                \"new_photo\": \"base64\",\n                \"quantity\": \"3 comprimidos\"\n            },\n            {\n                \"medicine\": \"666f1975d1634d80602393f6\",\n                \"usage_duration\": 2,\n                \"usage_interval\": \"8 hours\",\n                \"treatment_start\": \"2024-11-31\",\n                \"next_dose\": \"2024-12-01\",\n                \"link_photo\": \"http://linkparafoto.com/medicine1.jpg\",\n                \"new_photo\": \"base64\",\n                \"quantity\": \"3 comprimidos\"\n            }\n        ]\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/api/recipe/register-recipe"
+					},
+					"response": []
+				},
+				{
+					"name": "Get By ID",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/recipe/get-recipe/66705c9d899584d44e3b07a8"
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Receitas",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "GET",
+						"header": [],
+						"url": "{{api}}/api/recipe/get-recipes"
+					},
+					"response": []
+				},
+				{
+					"name": "Iniciar Tratamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"recipe_id\": \"66705c9d899584d44e3b07a8\",\n    \"medicine_id\": \"66705c9d899584d44e3b07aa\",\n    \"treatment_start\": \"2024-06-18T14:35:21+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/api/recipe/start-treatment"
+					},
+					"response": []
+				},
+				{
+					"name": "Atualizar Tratamento",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": {
+								"token": "{{jwt_token}}"
+							}
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"recipe_id\": \"66705c9d899584d44e3b07a8\",\n    \"medicine_id\": \"66705c9d899584d44e3b07aa\",\n    \"dose_date\": \"2024-06-25T03:08:21+00:00\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{api}}/api/recipe/update-treatment"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
